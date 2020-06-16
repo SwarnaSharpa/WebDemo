@@ -2,7 +2,7 @@ FROM centos:latest
 RUN yum update
 RUN yum -y install httpd
 COPY ./index.html var/www/html/
-CMD["usr/sbin/httpd","-D","FOREGROUND"]
+CMD ["usr/sbin/httpd","-D","FOREGROUND"]
 EXPOSE 80
 
 
